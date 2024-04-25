@@ -1,3 +1,73 @@
 /* 
     General Styles
 */
+
+
+/* Estilos para el contenedor del formulario */
+.containerPrincipal {
+  background-color: black;
+  height: 800px;
+}
+
+.containerContact {
+    background: white;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Estilos para el título del formulario */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Estilos para las etiquetas de los campos */
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Estilos para los campos de entrada */
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilos para el boton de enviar */
+  .agregarContacto {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el boton de enviar al pasar el raton */
+  button:hover {
+    background-color: #0056b3;
+  }
+ 
+  .botonContacto{
+    margin-left: 20px;
+  }
+
+  .tituloWeb {
+    margin-left: 30px;
+  }
+
+  .botonAgregarContacto {
+    margin-right: 30px;
+  }
+
+  .BotonVolver {
+    margin-top: 20px;
+  }
