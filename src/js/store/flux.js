@@ -106,6 +106,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.catch(error => console.error(error));
 			},
 
+			showConfirmationModal: (id) => {
+                setStore({ showConfirmation: true, contactToDelete: id });
+            },
+
+            hideConfirmationModal: () => {
+                setStore({ showConfirmation: false, contactToDelete: null });
+            },
+
 
 			changeColor: (index, color) => {
 				//get the store

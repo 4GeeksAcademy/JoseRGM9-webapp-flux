@@ -3,7 +3,6 @@ import { ListContact } from "../component/ListContact";
 import { Link } from "react-router-dom";
 export const Contacts = () => {
 
-
     return (
         <div className="container mt-5">
             <div className="container mt-4">
