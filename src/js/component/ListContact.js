@@ -18,7 +18,7 @@ export const ListContact = () => {
 
   return (
     <div>
-      {store.contactos.map((contact, index) => (
+      {store.contactos && store.contactos.map((contact, index) => (
         <li key={index} className="list-group-item">
           <div className="row align-items-center">
             <div className="col-3">
