@@ -7,9 +7,9 @@ export const AddContact = () => {
 	const { store, actions } = useContext(Context);
 	const [userInput, setUserInput] = useState({
 		nombre: "",
-		correo: "",
 		telefono: "",
-		direccion: ""
+		direccion: "",
+		correo: ""
 	});
 
 	const EnviarFormulario = e => {
@@ -17,9 +17,9 @@ export const AddContact = () => {
 		actions.CreateContact(userInput);
 		setUserInput({
 			nombre: "",
-			correo: "",
 			telefono: "",
-			direccion: ""
+			direccion: "",
+			correo: ""
 		});
 	};
 
@@ -39,7 +39,7 @@ export const AddContact = () => {
 							required={true}
 							value={userInput.nombre}
 							onChange={(e) => setUserInput({ ...userInput, nombre: e.target.value })}
-							placeholder="full Name" />
+							placeholder="Nombre" />
 					</div>
 					<div className="my-3">
 						<label className="form-label d-flex text-start">
@@ -65,7 +65,7 @@ export const AddContact = () => {
 							required={true}
 							value={userInput.direccion}
 							onChange={(e) => setUserInput({ ...userInput, direccion: e.target.value })}
-							placeholder="Address" />
+							placeholder="Direccion" />
 					</div>
 					<div className="my-3">
 						<label className="form-label d-flex text-start">
@@ -78,7 +78,7 @@ export const AddContact = () => {
 							required={true}
 							value={userInput.correo}
 							onChange={(e) => setUserInput({ ...userInput, correo: e.target.value })}
-							placeholder="name@example.com" />
+							placeholder="email@example.com" />
 					</div>
 				</div>
 				<div className="botonGuardar">
@@ -93,6 +93,5 @@ export const AddContact = () => {
 				</div>
 			</div>
 		</>
-
 	)
 }

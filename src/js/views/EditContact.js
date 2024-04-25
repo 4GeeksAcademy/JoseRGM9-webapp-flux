@@ -37,7 +37,6 @@ export const EditContact = () => {
         }
     }, [id, store.contactos]);
 
-
     return (
         <div>
             <form onSubmit={e => EnviarFormulario(e)}>
@@ -54,7 +53,7 @@ export const EditContact = () => {
                             required={true}
                             value={userInputTwo.nombredos}
                             onChange={(e) => setUserInputTwo({ ...userInputTwo, nombredos: e.target.value })}
-                            placeholder="full Name" />
+                            placeholder="nombre" />
                     </div>
                     <div className="my-3">
                         <label className="form-label d-flex text-start">
@@ -80,7 +79,7 @@ export const EditContact = () => {
                             required={true}
                             value={userInputTwo.direcciondos}
                             onChange={(e) => setUserInputTwo({ ...userInputTwo, direcciondos: e.target.value })}
-                            placeholder="Address" />
+                            placeholder="Direccion" />
                     </div>
                     <div className="my-3">
                         <label className="form-label d-flex text-start">
@@ -93,7 +92,7 @@ export const EditContact = () => {
                             required={true}
                             value={userInputTwo.correodos}
                             onChange={(e) => setUserInputTwo({ ...userInputTwo, correodos: e.target.value })}
-                            placeholder="name@example.com" />
+                            placeholder="email@example.com" />
                     </div>
                 </div>
 
