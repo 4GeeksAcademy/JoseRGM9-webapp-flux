@@ -16,7 +16,7 @@ export const EditContact = () => {
     const EnviarFormulario = (e) => {
         e.preventDefault();
         actions.EditContact(id, userInputTwo);
-        window.location.href = "/"; // Llamar a la función EditContact con el ID y los datos del formulario
+        window.location.href = "/";
     };
 
     useEffect(() => {
@@ -33,7 +33,7 @@ export const EditContact = () => {
     }, [id, store.contactos]);
 
     return (
-        <div>
+        <div className="container">
             <form onSubmit={e => EnviarFormulario(e)}>
                 <div className="container mt-5">
                     <div className="mt-5">

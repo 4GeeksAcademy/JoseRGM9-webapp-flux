@@ -25,7 +25,7 @@ export const AddContact = () => {
 
 
 	return (
-		<>
+		<div className="container">
 			<form onSubmit={e => EnviarFormulario(e)}>
 				<div className="container mt-5">
 					<div className="mt-5">
@@ -93,6 +93,6 @@ export const AddContact = () => {
 					</Link>
 				</div>
 			</div>
-		</>
+		</div>
 	)
 }

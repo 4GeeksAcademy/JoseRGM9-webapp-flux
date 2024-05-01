@@ -29,18 +29,18 @@ export const ListContact = () => {
                 style={{ width: "150px", height: "150px" }}
               />
             </div>
-            <div className="col-md-3 col-sm-2 text-center mt-sm-3">
+            <div className="col-md-3 col-sm-4 text-center mt-2">
               <Link to={`/contactCard/${contact.id}`}>
                 <button className="botonContacto btn btn-primary">Contacto</button>
               </Link>
             </div>
-            <div className="col-md-5 col-sm-6 text-center contenidoListContact mt-sm-3">
+            <div className="col-md-5 col-sm-4 text-center contenidoListContact mt-3">
               <h5>{contact.name}</h5>
               <p>{contact.phone}</p>
               <p>{contact.address}</p>
               <p>{contact.email}</p>
             </div>
-            <div className="col-md-2 col-sm-12 text-md-right mt-md-0 mt-sm-2 text-center mt-sm-3">
+            <div className="col-md-2 col-sm-12 text-md-right mt-md-0 mt-3 text-center mt-sm-3">
               <Link to={`/EditContact/${contact.id}`}>
                 <button className="btn btn-primary mx-2">
                   <i className="fas fa-pencil-alt"></i>
