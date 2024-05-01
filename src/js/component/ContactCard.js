@@ -24,11 +24,15 @@ export const ContactCard = () => {
             </div>
             <li className="list-group-item">
                 <div className="row align-items-center">
-                    <div className="col-6">
-                        <img src="https://static.wikia.nocookie.net/esstarwars/images/d/de/Grievoushead.jpg/revision/latest?cb=20101204131756" alt="User" className="img-fluid rounded-circle"
-                            style={{ width: "150px", height: "150px" }} />
+                    <div className="col-md-4 col-sm-4 text-center mt-sm-3">
+                        <img
+                            src="https://static.wikia.nocookie.net/esstarwars/images/d/de/Grievoushead.jpg/revision/latest?cb=20101204131756"
+                            alt="User"
+                            className="img-responsive rounded-circle"
+                            style={{ width: "150px", height: "150px" }}
+                        />
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-8 col-sm-6 text-center contenidoListContact mt-sm-3">
                         <h5>{contact.name}</h5>
                         <p>{contact.phone}</p>
                         <p>{contact.address}</p>
@@ -37,7 +41,7 @@ export const ContactCard = () => {
                 </div>
             </li>
             <div className="row">
-                <div className="BotonVolver col text-center">
+                <div className="BotonVolver col text-center mt-sm-3">
                     <Link to="/">
                         <button className="btn btn-primary">Volver a Lista de Contactos</button>
                     </Link>

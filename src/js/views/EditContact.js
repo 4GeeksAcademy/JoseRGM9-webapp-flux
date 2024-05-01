@@ -15,13 +15,8 @@ export const EditContact = () => {
 
     const EnviarFormulario = (e) => {
         e.preventDefault();
-        actions.EditContact(id, userInputTwo); // Llamar a la función EditContact con el ID y los datos del formulario
-        setUserInputTwo({
-            nombredos: "",
-            correodos: "",
-            telefonodos: "",
-            direcciondos: ""
-        });
+        actions.EditContact(id, userInputTwo);
+        window.location.href = "/"; // Llamar a la función EditContact con el ID y los datos del formulario
     };
 
     useEffect(() => {
@@ -98,13 +93,7 @@ export const EditContact = () => {
 
                 <input type="submit" value={"Guardar"} className="botonGuardar btn btn-primary"></input>
             </form>
-            <div className="row">
-                <div className="col text-center">
-                    <Link to="/">
-                        <button className="VolverListaContactos btn btn-primary">Volver a Lista de Contactos</button>
-                    </Link>
-                </div>
-            </div>
+
         </div>
 
     )

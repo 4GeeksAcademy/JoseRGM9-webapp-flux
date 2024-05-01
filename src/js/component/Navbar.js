@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
 	return (
 		<div className="containerNavbar">
-			<nav className="navbar navbar-light bg-light p-3">
+			<nav className="navbar navbar-light bg-light p-3 fixed-top">
 				<Link to="/">
 					<span className="tituloWeb navbar-brand mb-0 h1">React Flux</span>
 				</Link>
@@ -14,6 +14,8 @@ export const Navbar = () => {
 					</Link>
 				</div>
 			</nav>
+			<div className="espacioNavbar" >
+			</div>
 		</div>
 	);
 };
