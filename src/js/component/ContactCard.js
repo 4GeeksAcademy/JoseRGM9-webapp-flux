@@ -19,7 +19,7 @@ export const ContactCard = () => {
 
     return (
         <div className="container mt-5">
-            <div className="container mt-4">
+            <div className="container">
                 <h1 className="text-center">Contacto</h1>
             </div>
             <li className="list-group-item">
