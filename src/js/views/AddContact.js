@@ -89,7 +89,7 @@ export const AddContact = () => {
 			<div className="row">
 				<div className="col text-center">
 					<Link to="/">
-						<button className="VolverListaContactos btn btn-primary">Volver a Lista de Contactos</button>
+						<button className="VolverListaContactos btn btn-primary">vVolver a Lista de Contactos</button>
 					</Link>
 				</div>
 			</div>
